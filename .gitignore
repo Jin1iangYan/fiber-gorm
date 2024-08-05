@@ -125,3 +125,6 @@ rss-aggregator.exe
 # main bin file
 main
 main.exe
+
+# sqlite database file
+*.db
