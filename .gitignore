@@ -128,3 +128,6 @@ main.exe
 
 # sqlite database file
 *.db
+
+# air tmp dir
+/tmp
