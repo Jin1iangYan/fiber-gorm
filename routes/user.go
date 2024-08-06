@@ -86,8 +86,6 @@ func UpdateUser(c *fiber.Ctx) error {
 	id := c.Params("id")
 	var user models.User
 
-	fmt.Println(user)
-
 	if err := findUser(id, &user); err != nil {
 		return c.Status(400).JSON(err.Error())
 	}
