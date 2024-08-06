@@ -9,7 +9,7 @@ import (
 
 type User struct {
 	ID        uuid.UUID `json:"id" gorm:"type:char(36);primary_key"`
-	CreateAt  time.Time
+	CreatedAt time.Time
 	FirstName string `json:"first_name"`
 	LastName  string `json:"last_name"`
 }

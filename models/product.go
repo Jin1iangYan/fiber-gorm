@@ -9,7 +9,7 @@ import (
 
 type Product struct {
 	ID           uuid.UUID `json:"id" gorm:"type:char(36);primary_key"`
-	CreateAt     time.Time
+	CreatedAt    time.Time
 	Name         string `json:"name"`
 	SerialNumber string `json:"serial_number"`
 }

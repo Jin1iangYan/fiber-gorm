@@ -9,7 +9,7 @@ import (
 
 type Order struct {
 	ID        uuid.UUID `json:"id" gorm:"type:char(36);primary_key"`
-	CreateAt  time.Time
+	CreatedAt time.Time
 	ProductID uuid.UUID `json:"product_id"`
 	Product   Product   `gorm:"foreignKey:ProductID"`
 	UserID    uuid.UUID `json:"user_id"`
